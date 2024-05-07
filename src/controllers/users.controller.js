@@ -2,6 +2,7 @@ import { usersService } from '../services/index.js'
 
 const getAllUsers = async (req, res) => {
   console.log({ message: 'El usuario pidió la lista de usuarios' })
+  console.log({ message: 'Importante para qa' })
   const users = await usersService.getAll()
   res.send({ status: 'success', payload: users })
 }
